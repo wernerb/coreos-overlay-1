@@ -102,3 +102,11 @@ sys-fs/btrfs-progs -zstd
 
 # enable regular expression processing in jq
 app-misc/jq oniguruma
+
+# Enable SELinux for all targets
+coreos-base/coreos          selinux
+sys-apps/dbus               selinux
+sys-apps/systemd            selinux
+sys-apps/coreutils          selinux
+app-emulation/runc          selinux
+app-arch/tar                selinux
