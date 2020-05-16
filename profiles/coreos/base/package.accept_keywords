@@ -82,3 +82,8 @@ dev-util/checkbashisms
 =dev-lang/rust-1.44.1 ~amd64 ~arm64
 
 =sys-fs/cryptsetup-2.0.3 ~amd64
+
+=sec-policy/selinux-base-2.20190609-r1 ~amd64 ~arm64
+=sec-policy/selinux-base-policy-2.20190609-r1 ~amd64 ~arm64
+=sec-policy/selinux-unconfined-2.20190609-r1 ~amd64 ~arm64
+=sec-policy/selinux-virt-2.20190609-r1 ~amd64 ~arm64
