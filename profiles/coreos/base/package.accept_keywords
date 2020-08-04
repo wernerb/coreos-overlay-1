@@ -68,8 +68,8 @@ dev-util/checkbashisms
 
 =sys-process/tini-0.18.0 ~arm64
 
-=sys-libs/libsepol-2.4 **
-=sys-libs/libselinux-2.4 **
+=sys-libs/libsepol-3.0 **
+=sys-libs/libselinux-3.0 **
 
 =net-misc/openssh-8.1_p1-r3 ~arm64
 
