@@ -109,6 +109,7 @@ sys-apps/dbus               selinux
 sys-apps/systemd            selinux
 sys-apps/coreutils          selinux
 app-emulation/runc          selinux
+app-emulation/docker-runc   selinux
 app-arch/tar                selinux
 
 sys-apps/policycoreutils semodule
