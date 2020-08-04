@@ -6,10 +6,10 @@
 		<name>SELinux Team</name>
 	</maintainer>
 	<longdescription>
-		Gentoo SELinux base policy.  This contains policy for a system at the end of system installation.
-		There is no extra policy in this package.
+		semodule-utils are utilities to create and link SELinux policy module packages.
 	</longdescription>
-	<use>
-		<flag name="unconfined">Enable support for the unconfined SELinux policy module</flag>
-	</use>
+	<upstream>
+		<remote-id type="cpe">cpe:/a:redhat:policycoreutils</remote-id>
+		<remote-id type="github">SELinuxProject/selinux</remote-id>
+	</upstream>
 </pkgmetadata>

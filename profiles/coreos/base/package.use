@@ -110,3 +110,5 @@ sys-apps/systemd            selinux
 sys-apps/coreutils          selinux
 app-emulation/runc          selinux
 app-arch/tar                selinux
+
+sys-apps/policycoreutils semodule
