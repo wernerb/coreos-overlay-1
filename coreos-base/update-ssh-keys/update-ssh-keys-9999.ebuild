@@ -3,9 +3,9 @@
 
 EAPI=6
 
-CROS_WORKON_PROJECT="flatcar-linux/update-ssh-keys"
+CROS_WORKON_PROJECT="kinvolk/update-ssh-keys"
 CROS_WORKON_LOCALNAME="update-ssh-keys"
-CROS_WORKON_REPO="git://github.com"
+CROS_WORKON_REPO="https://github.com"
 
 if [[ ${PV} == 9999 ]]; then
 	KEYWORDS="~amd64 ~arm64"
@@ -17,7 +17,7 @@ fi
 inherit coreos-cargo cros-workon
 
 DESCRIPTION="Utility for managing OpenSSH authorized public keys"
-HOMEPAGE="https://github.com/flatcar-linux/update-ssh-keys"
+HOMEPAGE="https://github.com/kinvolk/update-ssh-keys"
 LICENSE="Apache-2.0"
 SLOT="0"
 

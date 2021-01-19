@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=4
-CROS_WORKON_PROJECT="flatcar-linux/toolbox"
+CROS_WORKON_PROJECT="kinvolk/toolbox"
 CROS_WORKON_LOCALNAME="toolbox"
-CROS_WORKON_REPO="git://github.com"
+CROS_WORKON_REPO="https://github.com"
 
 if [[ "${PV}" == 9999 ]]; then
 	KEYWORDS="~amd64 ~arm64"
@@ -16,7 +16,7 @@ fi
 inherit cros-workon
 
 DESCRIPTION="toolbox"
-HOMEPAGE="https://github.com/coreos/toolbox"
+HOMEPAGE="https://github.com/kinvolk/toolbox"
 SRC_URI=""
 
 LICENSE="Apache-2.0"

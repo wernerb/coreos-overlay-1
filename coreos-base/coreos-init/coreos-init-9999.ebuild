@@ -3,9 +3,9 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="5"
-CROS_WORKON_PROJECT="flatcar-linux/init"
+CROS_WORKON_PROJECT="kinvolk/init"
 CROS_WORKON_LOCALNAME="init"
-CROS_WORKON_REPO="git://github.com"
+CROS_WORKON_REPO="https://github.com"
 
 if [[ "${PV}" == 9999 ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
@@ -16,8 +16,8 @@ fi
 
 inherit cros-workon systemd
 
-DESCRIPTION="Init scripts for CoreOS"
-HOMEPAGE="http://www.coreos.com/"
+DESCRIPTION="Init scripts for Flatcar Container Linux"
+HOMEPAGE="https://www.flatcar-linux.org/"
 SRC_URI=""
 
 LICENSE="BSD"

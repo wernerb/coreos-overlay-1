@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-CROS_WORKON_PROJECT="flatcar-linux/ignition"
+CROS_WORKON_PROJECT="kinvolk/ignition"
 CROS_WORKON_LOCALNAME="ignition"
-CROS_WORKON_REPO="git://github.com"
-COREOS_GO_PACKAGE="github.com/coreos/ignition"
+CROS_WORKON_REPO="https://github.com"
+COREOS_GO_PACKAGE="github.com/kinvolk/ignition"
 inherit coreos-go cros-workon systemd udev
 
 if [[ "${PV}" == 9999 ]]; then
@@ -16,7 +16,7 @@ else
 fi
 
 DESCRIPTION="Pre-boot provisioning utility"
-HOMEPAGE="https://github.com/coreos/ignition"
+HOMEPAGE="https://github.com/kinvolk/ignition"
 SRC_URI=""
 
 LICENSE="Apache-2.0"

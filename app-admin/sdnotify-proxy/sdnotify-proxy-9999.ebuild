@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-CROS_WORKON_PROJECT="flatcar-linux/sdnotify-proxy"
+CROS_WORKON_PROJECT="kinvolk/sdnotify-proxy"
 CROS_WORKON_LOCALNAME="sdnotify-proxy"
-CROS_WORKON_REPO="git://github.com"
-COREOS_GO_PACKAGE="github.com/coreos/sdnotify-proxy"
+CROS_WORKON_REPO="https://github.com"
+COREOS_GO_PACKAGE="github.com/kinvolk/sdnotify-proxy"
 inherit coreos-go cros-workon
 
 if [[ "${PV}" == 9999 ]]; then
@@ -16,7 +16,7 @@ else
 fi
 
 DESCRIPTION="sdnotify-proxy"
-HOMEPAGE="https://github.com/coreos/sdnotify-proxy"
+HOMEPAGE="https://github.com/kinvolk/sdnotify-proxy"
 SRC_URI=""
 
 LICENSE="Apache-2.0"

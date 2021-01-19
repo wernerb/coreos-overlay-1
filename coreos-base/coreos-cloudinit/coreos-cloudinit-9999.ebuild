@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-CROS_WORKON_PROJECT="flatcar-linux/coreos-cloudinit"
+CROS_WORKON_PROJECT="kinvolk/coreos-cloudinit"
 CROS_WORKON_LOCALNAME="coreos-cloudinit"
-CROS_WORKON_REPO="git://github.com"
-COREOS_GO_PACKAGE="github.com/coreos/coreos-cloudinit"
+CROS_WORKON_REPO="https://github.com"
+COREOS_GO_PACKAGE="github.com/kinvolk/coreos-cloudinit"
 inherit cros-workon systemd toolchain-funcs udev coreos-go
 
 if [[ "${PV}" == 9999 ]]; then
@@ -16,7 +16,7 @@ else
 fi
 
 DESCRIPTION="coreos-cloudinit"
-HOMEPAGE="https://github.com/coreos/coreos-cloudinit"
+HOMEPAGE="https://github.com/kinvolk/coreos-cloudinit"
 SRC_URI=""
 
 LICENSE="Apache-2.0"

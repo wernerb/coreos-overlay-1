@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
-CROS_WORKON_PROJECT="flatcar-linux/update_engine"
-CROS_WORKON_REPO="git://github.com"
+CROS_WORKON_PROJECT="kinvolk/update_engine"
+CROS_WORKON_REPO="https://github.com"
 AUTOTOOLS_AUTORECONF=1
 
 if [[ "${PV}" == 9999 ]]; then
@@ -15,8 +15,8 @@ fi
 
 inherit autotools-utils flag-o-matic toolchain-funcs cros-workon systemd
 
-DESCRIPTION="CoreOS OS Update Engine"
-HOMEPAGE="https://github.com/coreos/update_engine"
+DESCRIPTION="Flatcar Container Linux OS Update Engine"
+HOMEPAGE="https://github.com/kinvolk/update_engine"
 SRC_URI=""
 
 LICENSE="BSD"

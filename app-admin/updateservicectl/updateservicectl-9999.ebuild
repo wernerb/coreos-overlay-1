@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-CROS_WORKON_PROJECT="flatcar-linux/updateservicectl"
+CROS_WORKON_PROJECT="kinvolk/updateservicectl"
 CROS_WORKON_LOCALNAME="updateservicectl"
-CROS_WORKON_REPO="git://github.com"
-COREOS_GO_PACKAGE="github.com/coreos/updateservicectl"
+CROS_WORKON_REPO="https://github.com"
+COREOS_GO_PACKAGE="github.com/kinvolk/updateservicectl"
 inherit cros-workon coreos-go
 
 if [[ "${PV}" == 9999 ]]; then
@@ -16,7 +16,7 @@ else
 fi
 
 DESCRIPTION="CoreUpdate Management CLI"
-HOMEPAGE="https://github.com/coreos/updateservicectl"
+HOMEPAGE="https://github.com/kinvolk/updateservicectl"
 SRC_URI=""
 
 LICENSE="Apache-2.0"

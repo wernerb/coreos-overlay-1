@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-CROS_WORKON_PROJECT="flatcar-linux/mayday"
+CROS_WORKON_PROJECT="kinvolk/mayday"
 CROS_WORKON_LOCALNAME="mayday"
-CROS_WORKON_REPO="git://github.com"
-COREOS_GO_PACKAGE="github.com/coreos/mayday"
+CROS_WORKON_REPO="https://github.com"
+COREOS_GO_PACKAGE="github.com/kinvolk/mayday"
 inherit coreos-go cros-workon
 
 if [[ "${PV}" == 9999 ]]; then
@@ -16,7 +16,7 @@ else
 fi
 
 DESCRIPTION="mayday"
-HOMEPAGE="https://github.com/coreos/mayday"
+HOMEPAGE="https://github.com/kinvolk/mayday"
 SRC_URI=""
 
 LICENSE="Apache-2.0"

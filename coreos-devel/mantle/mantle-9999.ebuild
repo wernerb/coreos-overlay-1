@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-CROS_WORKON_PROJECT="flatcar-linux/mantle"
+CROS_WORKON_PROJECT="kinvolk/mantle"
 CROS_WORKON_LOCALNAME="mantle"
-CROS_WORKON_REPO="git://github.com"
-COREOS_GO_PACKAGE="github.com/coreos/mantle"
+CROS_WORKON_REPO="https://github.com"
+COREOS_GO_PACKAGE="github.com/kinvolk/mantle"
 COREOS_GO_MOD="vendor"
 
 if [[ "${PV}" == 9999 ]]; then
@@ -17,8 +17,8 @@ fi
 
 inherit coreos-go cros-workon
 
-DESCRIPTION="Mantle: Gluing CoreOS together"
-HOMEPAGE="https://github.com/coreos/mantle"
+DESCRIPTION="Mantle: Gluing Flatcar Container Linux together"
+HOMEPAGE="https://github.com/kinvolk/mantle"
 LICENSE="Apache-2.0"
 SLOT="0"
 # objcopy/split have trouble with our cross-compiled kolet

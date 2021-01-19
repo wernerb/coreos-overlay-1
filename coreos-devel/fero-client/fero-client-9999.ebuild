@@ -3,9 +3,9 @@
 
 EAPI=7
 
-CROS_WORKON_PROJECT="coreos/fero"
+CROS_WORKON_PROJECT="kinvolk/fero"
 CROS_WORKON_LOCALNAME="fero"
-CROS_WORKON_REPO="git://github.com"
+CROS_WORKON_REPO="https://github.com"
 
 if [[ ${PV} == 9999 ]]; then
 	KEYWORDS="~amd64"
@@ -17,7 +17,7 @@ fi
 inherit cargo cros-workon
 
 DESCRIPTION="Client for fero signing server"
-HOMEPAGE="https://github.com/coreos/fero"
+HOMEPAGE="https://github.com/kinvolk/fero"
 LICENSE="LGPL-2.1+"
 SLOT="0"
 

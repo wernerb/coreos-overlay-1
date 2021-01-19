@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
-CROS_WORKON_PROJECT="flatcar-linux/dev-util"
-CROS_WORKON_REPO="git://github.com"
+CROS_WORKON_PROJECT="kinvolk/flatcar-dev-util"
+CROS_WORKON_REPO="https://github.com"
 CROS_WORKON_LOCALNAME="dev"
 CROS_WORKON_LOCALDIR="src/platform"
 
@@ -18,8 +18,8 @@ PYTHON_COMPAT=( python2_7 )
 
 inherit cros-workon python-single-r1
 
-DESCRIPTION="emerge utilities for CoreOS developer images"
-HOMEPAGE="https://github.com/coreos/dev-util/"
+DESCRIPTION="emerge utilities for Flatcar Container Linux developer images"
+HOMEPAGE="https://github.com/kinvolk/flatcar-dev-util/"
 
 LICENSE="GPL-2"
 SLOT="0"

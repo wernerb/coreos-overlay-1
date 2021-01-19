@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="5"
-CROS_WORKON_PROJECT="flatcar-linux/baselayout"
+CROS_WORKON_PROJECT="kinvolk/baselayout"
 CROS_WORKON_LOCALNAME="baselayout"
-CROS_WORKON_REPO="git://github.com"
+CROS_WORKON_REPO="https://github.com"
 
 if [[ "${PV}" == 9999 ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
@@ -15,8 +15,8 @@ fi
 
 inherit cros-workon eutils multilib systemd
 
-DESCRIPTION="Filesystem baselayout for CoreOS"
-HOMEPAGE="http://www.coreos.com/"
+DESCRIPTION="Filesystem baselayout for Flatcar Container Linux"
+HOMEPAGE="https://www.flatcar-linux.org/"
 SRC_URI=""
 
 LICENSE="GPL-2"
